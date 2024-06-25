@@ -26,7 +26,7 @@
         android:layout_height="0dp"
         app:layout_constraintVertical_weight="9"
         android:orientation="vertical"
-        android:gravity="center"
+        android:gravity="center_horizontal"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/icon"
         app:layout_constraintBottom_toTopOf="@+id/btnlayout"
@@ -60,22 +60,14 @@
             android:layout_marginBottom="20dp"
             android:background="@drawable/textfield_bg"/>
 
-        <Button
-            android:id="@+id/btn_more"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="#00FF0000"
-            android:text="@string/button_more"
-            android:drawableEnd="@drawable/icon_downarrow"
-            android:textColor="@color/black"
-            />
 
         <LinearLayout
+            android:id="@+id/field_2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:gravity="center"
-            android:visibility="invisible">
+            android:visibility="gone">
 
             <EditText
                 android:id="@+id/edit_birth"
@@ -105,6 +97,16 @@
                 android:background="@drawable/textfield_bg"/>
 
         </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#00FF0000"
+            android:text="@string/button_more"
+            android:drawableEnd="@drawable/icon_downarrow"
+            android:textColor="@color/black"
+            />
 
 
     </androidx.appcompat.widget.LinearLayoutCompat>
