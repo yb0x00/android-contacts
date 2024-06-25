@@ -22,11 +22,11 @@ class MainActivity : AppCompatActivity() {
         save = findViewById(R.id.btn_save)
 
         cancel.setOnClickListener {
-            Log.d("버튼","취소");
+            Log.d("버튼","취소")
         }
 
         save.setOnClickListener {
-            Log.d("버튼","저장");
+            Log.d("버튼","저장")
         }
     }
 }
