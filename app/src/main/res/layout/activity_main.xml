@@ -74,6 +74,7 @@
                 android:layout_width="350dp"
                 android:layout_height="50dp"
                 android:hint="@string/edittext_birth"
+                android:focusableInTouchMode="false"
                 android:lineSpacingExtra="100dp"
                 android:layout_marginBottom="20dp"
                 android:background="@drawable/textfield_bg"/>
