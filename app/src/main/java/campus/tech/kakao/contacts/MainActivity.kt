@@ -36,7 +36,7 @@ class MainActivity : AppCompatActivity() {
 
     fun setUI(){
         more = findViewById(R.id.btn_more)
-        more_layout = findViewById(R.id.field_2)
+        more_layout = findViewById(R.id.addfield)
 
         date_birth = findViewById(R.id.edit_birth)
         imm = getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
