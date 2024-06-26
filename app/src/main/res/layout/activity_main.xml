@@ -79,14 +79,41 @@
                 android:layout_marginBottom="20dp"
                 android:background="@drawable/textfield_bg"/>
 
-            <EditText
-                android:id="@+id/edit_gender"
-                android:layout_width="350dp"
-                android:layout_height="50dp"
-                android:hint="@string/edittext_gender"
-                android:lineSpacingExtra="100dp"
-                android:layout_marginBottom="20dp"
-                android:background="@drawable/textfield_bg"/>
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/edit_gender"
+                    android:layout_width="350dp"
+                    android:layout_height="50dp"
+                    android:hint="@string/edittext_gender"
+                    android:enabled="false"
+                    android:lineSpacingExtra="100dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/textfield_bg"/>
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="end">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/gender_w"
+                        android:paddingEnd="20dp"/>
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/gender_m"
+                        android:paddingEnd="20dp"/>
+                </RadioGroup>
+
+            </FrameLayout>
+
+
 
             <EditText
                 android:id="@+id/edit_note"
