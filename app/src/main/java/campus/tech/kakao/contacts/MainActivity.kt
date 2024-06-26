@@ -23,15 +23,21 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        setUI()
         showMoreEditTexts()
         showDatePicker()
         mydebug()
     }
 
-    fun showMoreEditTexts(){
+    fun setUI(){
         more = findViewById(R.id.btn_more)
         more_layout = findViewById(R.id.field_2)
+        date_birth = findViewById(R.id.edit_birth)
+        cancel = findViewById(R.id.btn_cancel)
+        save = findViewById(R.id.btn_save)
+    }
 
+    fun showMoreEditTexts(){
         more.setOnClickListener {
             more.visibility = if(more.visibility == View.VISIBLE){
                 View.GONE
@@ -43,8 +49,6 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun showDatePicker(){
-        date_birth = findViewById(R.id.edit_birth)
-
         date_birth.setOnClickListener {
             val cal = Calendar.getInstance()
 
@@ -57,9 +61,6 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun mydebug(){
-        cancel = findViewById(R.id.btn_cancel)
-        save = findViewById(R.id.btn_save)
-
         cancel.setOnClickListener {
             Log.d("버튼","취소")
         }
