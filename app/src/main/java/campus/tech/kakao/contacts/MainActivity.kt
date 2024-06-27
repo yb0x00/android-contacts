@@ -65,6 +65,7 @@ class MainActivity : AppCompatActivity() {
     fun showDatePicker(){
         date_birth.setOnClickListener {
             val cal = Calendar.getInstance()
+            cal.set(2000, Calendar.JANUARY, 1)
 
             imm.hideSoftInputFromWindow(
                 currentFocus?.windowToken,
