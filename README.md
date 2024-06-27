@@ -1,9 +1,10 @@
 # android-contacts
 
 ## 화면구성
-![Android Emulator - Pixel_4_API_26_5554 2024-06-27 오후 2_27_13](https://github.com/yb0x00/android-contacts/assets/169421565/6fef447f-ee4c-4ff5-bcdb-8c31c9158cf3)
-![Android Emulator - Pixel_4_API_26_5554 2024-06-26 오후 9_13_59](https://github.com/yb0x00/android-contacts/assets/169421565/5a9bc3a8-cec3-47b9-a85a-f3dc8cbf6122)
-![Android Emulator - Pixel_4_API_26_5554 2024-06-27 오후 2_32_11](https://github.com/yb0x00/android-contacts/assets/169421565/48d35064-4935-4a25-9c78-049c55249a98)
+<img src="https://github.com/yb0x00/android-contacts/assets/169421565/6fef447f-ee4c-4ff5-bcdb-8c31c9158cf3.png  width="200" height="400"/>
+<img src="https://github.com/yb0x00/android-contacts/assets/169421565/5a9bc3a8-cec3-47b9-a85a-f3dc8cbf6122.png  width="200" height="400"/>
+<img src="https://github.com/yb0x00/android-contacts/assets/169421565/48d35064-4935-4a25-9c78-049c55249a98.png  width="200" height="400"/>
+
 
 [화면 구성 요소]
 - 캐릭터 아이콘
