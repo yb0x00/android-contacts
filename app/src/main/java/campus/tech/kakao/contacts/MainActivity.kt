@@ -75,4 +75,10 @@ class MainActivity : AppCompatActivity() {
     private fun showToast(message: String){
         Toast.makeText(this@MainActivity, message, Toast.LENGTH_SHORT).show()
     }
+
+    fun onCancelClicked(){
+        cancel.setOnClickListener {
+            showToast("취소 되었습니다")
+        }
+    }
 }
