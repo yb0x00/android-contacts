@@ -23,6 +23,9 @@ class MainActivity : AppCompatActivity() {
     lateinit var dateString : String
     lateinit var imm : InputMethodManager
 
+    lateinit var name : EditText
+    lateinit var phone : EditText
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -31,6 +34,7 @@ class MainActivity : AppCompatActivity() {
         showMoreEditTexts()
         showDatePicker()
         onCancelClicked()
+        onSaveClicked()
     }
 
     fun setUI(){
@@ -42,6 +46,9 @@ class MainActivity : AppCompatActivity() {
 
         cancel = findViewById(R.id.btn_cancel)
         save = findViewById(R.id.btn_save)
+
+        name = findViewById(R.id.edit_name)
+        phone = findViewById(R.id.edit_phone)
     }
 
     fun showMoreEditTexts(){
@@ -79,6 +86,20 @@ class MainActivity : AppCompatActivity() {
     fun onCancelClicked(){
         cancel.setOnClickListener {
             showToast("취소 되었습니다")
+        }
+    }
+
+    fun onSaveClicked(){
+        save.setOnClickListener {
+            if (name.text.isEmpty()){
+                showToast("이름은 필수 입력 항목입니다")
+                name.requestFocus()
+            }
+            else if (phone.text.isEmpty()){
+                showToast("전화번호는 필수 입력 항목입니다")
+                phone.requestFocus()
+            }
+            else {showToast("저장이 완료 되었습니다")}
         }
     }
 }
